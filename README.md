@@ -1,2 +1,2 @@
 # LeetCode
-LeetCode C++ Solution
+LeetCode C++/Java/Python/Go Solution
