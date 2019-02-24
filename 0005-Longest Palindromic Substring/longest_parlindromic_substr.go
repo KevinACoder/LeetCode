@@ -6,7 +6,6 @@ func longestPalindrome(s string) string {
 
 	maxStart, maxLen := 0, 0
 	for i := 0; i < len(s); i++ {
-		//search from things like 'aba'
 		start, end := i, i
 		curLen := 1
 		start--
@@ -22,7 +21,6 @@ func longestPalindrome(s string) string {
 			maxLen = curLen
 		}
 
-		//search for things like 'abba'
 		start = i
 		end = i + 1
 		curLen = 0
@@ -38,5 +36,5 @@ func longestPalindrome(s string) string {
 		}
 	}
 
-	return s[maxStart:(maxStart + maxLen - 1)]
+	return s[maxStart:(maxStart + maxLen)]
 }
